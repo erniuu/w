@@ -2,7 +2,7 @@ package model
 
 import "time"
 
-type Agent struct {
+type AgentData struct {
 	Crc          string `json:"crc"`
 	Id           string `json:"id"`
 	Name         string `json:"name"`
