@@ -1,7 +1,5 @@
 package model
 
-import "time"
-
 type AgentData struct {
 	Crc          string `json:"crc"`
 	Id           string `json:"id"`
