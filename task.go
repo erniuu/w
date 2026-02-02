@@ -1,7 +1,5 @@
 package model
 
-import "time"
-
 type TaskData struct {
 	Type        int       `json:"type"`
 	TaskId      string    `json:"task_id"`
