@@ -223,6 +223,12 @@ type ListingDrivesDataWin struct {
 	Type string `json:"type"`
 }
 
+type ChatData struct {
+	Username string `json:"username"`
+	Message  string `json:"message"`
+	Date     int64  `json:"date"`
+}
+
 type DownloadData struct {
 	FileId     string `json:"file_id"`
 	AgentId    string `json:"agent_id"`
@@ -270,6 +276,19 @@ type PivotData struct {
 	PivotName     string `json:"pivot_name"`
 	ParentAgentId string `json:"parent_agent_id"`
 	ChildAgentId  string `json:"child_agent_id"`
+}
+
+type CredsData struct {
+	CredId   string `json:"creds_id"`
+	Username string `json:"username"`
+	Password string `json:"password"`
+	Realm    string `json:"realm"`
+	Type     string `json:"type"`
+	Tag      string `json:"tag"`
+	Date     int64  `json:"date"`
+	Storage  string `json:"storage"`
+	AgentId  string `json:"agent_id"`
+	Host     string `json:"host"`
 }
 
 type TargetData struct {
