@@ -246,6 +246,7 @@ type DownloadData struct {
 
 type ScreenData struct {
 	ScreenId  string `json:"screen_id"`
+	AgentId     string `json:"agent_id"`
 	User      string `json:"user"`
 	Computer  string `json:"computer"`
 	LocalPath string `json:"local_path"`
