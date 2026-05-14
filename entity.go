@@ -35,7 +35,6 @@ const (
 	TUNNEL_TYPE_SOCKS5      = 2
 	TUNNEL_TYPE_SOCKS5_AUTH = 3
 	TUNNEL_TYPE_LOCAL_PORT  = 4
-	TUNNEL_TYPE_REVERSE     = 5
 
 	ADDRESS_TYPE_IPV4   = 1
 	ADDRESS_TYPE_DOMAIN = 3
@@ -94,7 +93,6 @@ type TunnelCallbacks struct {
 	Pause      func(channelId int) TaskData
 	Resume     func(channelId int) TaskData
 	Close      func(channelId int) TaskData
-	Reverse    func(tunnelId, port int) TaskData
 }
 
 type TerminalCallbacks struct {
