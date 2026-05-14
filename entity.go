@@ -268,6 +268,7 @@ type TunnelData struct {
 	Fport     string `json:"fport"`
 	AuthUser  string `json:"auth_user"`
 	AuthPass  string `json:"auth_pass"`
+	Status    string `json:"status"`
 }
 
 type PivotData struct {
