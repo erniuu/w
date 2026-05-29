@@ -64,8 +64,8 @@ type ExtenderListener interface {
 }
 
 type PluginAgent interface {
-	GenerateProfiles(profile BuildProfile) ([][]byte, error)
-	BuildPayload(profile BuildProfile, agentProfiles [][]byte) ([]byte, string, error)
+	GenerateProfiles(profile BuildProfile, scopeCredential string) ([][]byte, error)
+	BuildPayload(profile BuildProfile, agentProfiles [][]byte, scopeCredential string) ([]byte, string, error)
 
 	GetExtender() ExtenderAgent
 	CreateAgent(beat []byte) (AgentData, ExtenderAgent, error)
@@ -148,6 +148,11 @@ type AgentData struct {
 	Mark         string `json:"mark"`
 	Color        string `json:"color"`
 	TargetId     string `json:"target"`
+	BuildID     string `json:"build_id"`
+	OwnerUserID string `json:"owner_user_id"`
+	AuthorityID uint   `json:"authority_id"`
+	DeptID      string `json:"dept_id"`
+	ProjectID   string `json:"project_id"`
 	CustomData   []byte `json:"custom_data"`
 }
 
