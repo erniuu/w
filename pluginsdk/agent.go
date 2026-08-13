@@ -20,5 +20,4 @@ type AgentTS interface {
 	AgentConsoleOutput(agentId string, messageType int, message string, clearText string, store bool)
 
 	AgentPromoteStageSession(sessionID string, agentID string) error
-	AgentReportStageLoad(sessionID string, status string, loadError string) error
 }
