@@ -9,6 +9,7 @@ type PluginContext interface {
 	Pivot() PivotTS
 	Plugin() PluginTS
 	ScreenShot() ScreenShotTS
+	Screen() ScreenTS
 	Tunnel() TunnelTS
 	Task() TaskTS
 	Terminal() TerminalTS
