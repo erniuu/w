@@ -36,7 +36,7 @@ const (
 	TUNNEL_TYPE_SOCKS5_AUTH = 3
 	TUNNEL_TYPE_LOCAL_PORT  = 4
 	TUNNEL_TYPE_HTTP        = 5
-    TUNNEL_TYPE_HTTP_AUTH   = 6
+	TUNNEL_TYPE_HTTP_AUTH   = 6
 
 	ADDRESS_TYPE_IPV4   = 1
 	ADDRESS_TYPE_DOMAIN = 3
@@ -246,7 +246,7 @@ type DownloadData struct {
 
 type ScreenData struct {
 	ScreenId  string `json:"screen_id"`
-	AgentId     string `json:"agent_id"`
+	AgentId   string `json:"agent_id"`
 	User      string `json:"user"`
 	Computer  string `json:"computer"`
 	LocalPath string `json:"local_path"`
